@@ -6,11 +6,14 @@ import java.util.List;
 public class Board {
     private int cache = -2;
     private final int n;
-    private final int[][] tiles;
+    final int[][] tiles;
 
     // create a board from an n-by-n array of tiles,
     // where tiles[row][col] = tile at (row, col)
     public Board(int[][] tiles) {
+        if (tiles==null) {
+            throw new IllegalArgumentException();
+        }
         n = tiles.length;
         this.tiles = new int[n][n];
         for (int i = 0; i < n; i++) {
