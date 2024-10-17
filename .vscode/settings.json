@@ -2,4 +2,7 @@
     "java.project.referencedLibraries": [
         "lib/**/*.jar"
     ],
+    "files.exclude": {
+        "**/rubbish": true
+    }
 }

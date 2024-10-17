@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Solver",
+            "request": "launch",
+            "mainClass": "M10.eight_Puzzle.Solver",
+            "projectName": "java_b9ffa15d"
+        },
+        {
+            "type": "java",
+            "name": "Board",
+            "request": "launch",
+            "mainClass": "M10.eight_Puzzle.Board",
+            "projectName": "java_b9ffa15d"
+        },
+        {
+            "type": "java",
+            "name": "CollidingDisks",
+            "request": "launch",
+            "mainClass": "CollidingDisks",
+            "projectName": "java_b9ffa15d"
+        },
+        {
+            "type": "java",
             "name": "PercolationStats",
             "request": "launch",
             "mainClass": "PercolationStats",
