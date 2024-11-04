@@ -1,0 +1,8 @@
+{
+    "C_Cpp.default.compilerPath": "C:\\Users\\Daud\\compiler\\mingw64\\bin\\g++.exe",
+    "files.associations": {
+        "iostream": "cpp",
+        "shared_mutex": "cpp",
+        "memory": "cpp"
+    },
+}
