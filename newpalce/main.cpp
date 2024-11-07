@@ -1,22 +1,23 @@
 #include <iostream>
-#include "Box.h"
+#include <vector>
+#include <algorithm>
 
-int main()
-{
-    // 创建一个存储整数的 Box 对象
-    Box<int> intBox(123);
-    std::cout << "Integer Box contains: " << intBox.getData() << std::endl;
+int main() {
+    std::vector<int> numbers = {1, 2, 3, 4, 5};
 
-    // 创建一个存储字符串的 Box 对象
-    Box<std::string> strBox("Hello, World!");
-    std::cout << "String Box contains: " << strBox.getData() << std::endl;
+    // 使用lambda表达式计算所有元素的和
+    int sum = 0;
+    std::for_each(numbers.begin(), numbers.end(), [&sum](int n) {
+        sum += n;
+    });
 
-    // 修改 Box 对象中的数据
-    intBox.setData(456);
-    std::cout << "Integer Box now contains: " << intBox.getData() << std::endl;
+    std::cout << "Sum: " << sum << std::endl;
 
-    strBox.setData("Goodbye, World!");
-    std::cout << "String Box now contains: " << strBox.getData() << std::endl;
+    // 使用lambda表达式打印所有元素
+    std::for_each(numbers.begin(), numbers.end(), [](int n) {
+        std::cout << n << " ";
+    });
+    std::cout << std::endl;
 
     return 0;
 }
