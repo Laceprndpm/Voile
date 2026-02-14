@@ -1,0 +1,12 @@
+---
+title:
+date:
+last_clear:
+tags:
+grasp:
+value:
+difficulty:
+optional_difficulty:
+source:
+article:
+---
